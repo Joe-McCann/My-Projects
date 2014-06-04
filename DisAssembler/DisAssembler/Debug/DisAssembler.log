@@ -1,0 +1,21 @@
+﻿Build started 5/8/2014 1:26:34 PM.
+     1>Project "C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\DisAssembler\DisAssembler.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _LIB /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt Main.cpp
+         Main.cpp
+     1>c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(72): warning C4244: '+=' : conversion from 'double' to 'int', possible loss of data
+     1>c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(75): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(70) : definition of 'i' ignored
+                 c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(66) : definition of 'i' used
+     1>c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(76): warning C4258: 'i' : definition from the for loop is ignored; the definition from the enclosing scope is used
+                 c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(70) : definition of 'i' ignored
+                 c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(66) : definition of 'i' used
+     1>c:\users\joe\documents\visual studio 2013\projects\disassembler\disassembler\disassembler.h(148): warning C4715: 'DisAssembler::hxStrConv' : not all control paths return a value
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\Debug\DisAssembler.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\Debug\DisAssembler.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\Debug\DisAssembler.lib" /MACHINE:X86 Debug\Main.obj
+         DisAssembler.vcxproj -> C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\Debug\DisAssembler.exe
+     1>Done Building Project "C:\Users\Joe\documents\visual studio 2013\Projects\DisAssembler\DisAssembler\DisAssembler.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:01.65
