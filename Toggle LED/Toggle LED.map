@@ -1,0 +1,40 @@
+MPLINK 4.49, Linker
+Linker Map File - Created Mon May 05 07:53:11 2014
+
+                                 Section Info
+                  Section       Type    Address   Location Size(Bytes)
+                ---------  ---------  ---------  ---------  ---------
+                   .org_0       code   0x000000    program   0x000000
+                   .org_1       code   0x000000    program   0x000004
+                   .org_2       code   0x000005    program   0x000024
+
+
+
+                              Program Memory Usage 
+                               Start         End      
+                           ---------   ---------      
+                            0x000000    0x000001      
+                            0x000005    0x000016      
+            20 out of 8455 program addresses used, program memory utilization is 0%
+
+
+
+                              Symbols - Sorted by Name
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     loop   0x00000d    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                    loop2   0x000014    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                     main   0x000005    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                     swap   0x000010    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+
+
+
+                              Symbols - Sorted by Address
+                     Name    Address   Location    Storage File                     
+                ---------  ---------  ---------  --------- ---------                
+                     main   0x000005    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                     loop   0x00000d    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                     swap   0x000010    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+                    loop2   0x000014    program     static C:\Users\Joe\MPLAB PROJECTS\Toggle LED\Toggle LED.asm
+
+

@@ -1,0 +1,5 @@
+Message[302] C:\USERS\JOE\MPLAB PROJECTS\TOGGLE LED\TOGGLE LED.ASM 15 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JOE\MPLAB PROJECTS\TOGGLE LED\TOGGLE LED.ASM 16 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[302] C:\USERS\JOE\MPLAB PROJECTS\TOGGLE LED\TOGGLE LED.ASM 20 : Register in operand not in bank 0.  Ensure that bank bits are correct.
+Message[305] C:\USERS\JOE\MPLAB PROJECTS\TOGGLE LED\TOGGLE LED.ASM 33 : Using default destination of 1 (file).
+Error[129]   C:\USERS\JOE\MPLAB PROJECTS\TOGGLE LED\TOGGLE LED.ASM 37 : Expected (END)
