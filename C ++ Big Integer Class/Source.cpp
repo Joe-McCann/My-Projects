@@ -11,10 +11,9 @@ using namespace std;
 int main()
 {
 	
-	big x = 10;
-	x ^= 79; 
-
-	x.printNum();
+	big x = 2; 
+	big y = x ^ 6400;
+	cout << y << endl;
 
 	return 0;
 }

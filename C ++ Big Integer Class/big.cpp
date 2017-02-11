@@ -4,7 +4,7 @@
 #include <iostream>
 #include "Stopwatch.h"
 
-#define debug
+//#define debug
 
 using namespace std;
 
