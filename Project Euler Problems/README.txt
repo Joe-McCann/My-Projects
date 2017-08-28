@@ -1,0 +1,1 @@
+This folder is a collection of all project Euler problem solutions. It only goes up to #26, but I'm still working on later ones, so I'll occasionally update

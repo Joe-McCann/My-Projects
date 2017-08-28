@@ -13,7 +13,7 @@ def getTriangleNumber(n):
 n = 1
 k = factorize(getTriangleNumber(n))
 while k <= 500:
-    print(getTriangleNumber(n), ":", k)
+    #print(getTriangleNumber(n), ":", k)
     n+=1
     k = factorize(getTriangleNumber(n))
 

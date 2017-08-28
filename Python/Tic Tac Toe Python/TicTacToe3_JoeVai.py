@@ -32,6 +32,7 @@ class board:
         self.t = turtle.Turtle()
         self.s = turtle.Screen()
         self.t.speed(0)
+        turtle.tracer(0,0)
         
     def printGrid(self):
         """Prints the list of cells, for debugging purposes only"""
@@ -124,6 +125,7 @@ class board:
                 self.t.down()
                 self.t.write(str(j + i * self.width), font = ("Arial", self.size//10+1, "bold"))
         self.t.width(1/20*self.size)
+        turtle.update()
 
     def drawX(self):
         """Draws an X for player 1"""
@@ -168,6 +170,7 @@ class board:
         else:
             self.cells[gridNumber//self.width][gridNumber%self.width] = "O"
             self.drawO()
+        turtle.update()
         return True
 
     def drawLine(self, a, b):
@@ -181,6 +184,7 @@ class board:
         self.t.goto((a[1]-(self.width-1)/2)*self.size, ((self.width-1)/2-a[0])*self.size)
         self.t.down()
         self.t.goto((b[1]-(self.width-1)/2)*self.size, ((self.width-1)/2-b[0])*self.size)
+        turtle.update()
 
 class TicTacToe:
     """Class for handeling a game of tic tac toe. Uses board class"""
@@ -221,8 +225,10 @@ class TicTacToe:
     
 
     
-        
-game = TicTacToe("Joe", "BigRussia", 200, 3, 3)
+n1 = input("What is player 1's name: ")
+n2 = input("What is player 2's name: ")
+dim = int(input("What do you want the size of the board to be (n x n odd number)"))
+game = TicTacToe(n1, n2, int(240-19*dim), dim, dim)
 game.twoPlayer()
 
 

@@ -1,0 +1,2 @@
+This is a intro to Java class project in which we have to write a function that will generate all the primes up to a certain value
+by using a sieve method, and another method that can find the 2 primes that sum together to create a given even number. 
