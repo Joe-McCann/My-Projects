@@ -2,7 +2,6 @@
 #include <string>
 #include <vector>
 #include <iostream>
-#include "Stopwatch.h"
 
 //#define debug
 
@@ -14,7 +13,7 @@ using namespace std;
 
 //Generic default construct. Requires no parameters
 big::big()
-{	
+{
 	sign = 1;
 }
 
@@ -68,7 +67,7 @@ void big::printNum()
 {
 	if (sign == -1)
 		cout << "-";
-	
+
 	for (int i = number.size() - 1; i >= 0; --i)
 	{
 		cout << (short)number[i];
@@ -195,16 +194,16 @@ void big::operator*= (big& num)
 
 	/*for (int i = 0; i < number.size(); ++i)
 	{
-		copy.number.push_back(number[i]);
+	copy.number.push_back(number[i]);
 	}
 
 	number.resize(0);
 
 	for (int i = num.number.size() - 1; i > 0; --i)
 	{
-		addItself(num.number[i], copy);
+	addItself(num.number[i], copy);
 
-		this->shiftRight();
+	this->shiftRight();
 	}
 
 	addItself(num.number[0], copy);*/
@@ -213,7 +212,7 @@ void big::operator*= (big& num)
 	num.sign = holdsign2;
 
 	sign *= num.sign;
-	
+
 }
 
 //Exponents and reassigns
@@ -501,19 +500,19 @@ big big::operator* (string copy)
 	return operator*(x);
 }
 
-big big::operator+ (string copy) 
+big big::operator+ (string copy)
 {
 	big x(copy);
 	return operator+(x);
 }
 
-big big::operator- (string copy) 
+big big::operator- (string copy)
 {
 	big x(copy);
 	return operator-(x);
 }
 
-big big::operator/ (string copy) 
+big big::operator/ (string copy)
 {
 	big x(copy);
 	return operator/(x);
@@ -531,7 +530,7 @@ big big::operator^ (string copy)
 	return operator^(x);
 }
 
-int big::compare (const big& input)
+int big::compare(const big& input)
 {
 	big num = input;
 	cleanNum();
@@ -703,10 +702,10 @@ ostream &operator<<(ostream &output, const big& num)
 	}
 
 	return output;
-} 
+}
 
 //Credit to Microsoft for basic code. Allows for functionality with cin
-istream &operator>>(istream  &input, big & num)
+istream &operator >> (istream  &input, big & num)
 {
 	string in;
 	input >> in;
@@ -797,7 +796,7 @@ big big::sqrt()
 	for (int i = number.size() - 3; i > 0; i -= 2)
 	{
 
-		
+
 		dropDown.shiftRight();
 		dropDown.shiftRight();
 
@@ -826,10 +825,10 @@ big big::sqrt()
 		dropDown -= (helpers * helpers.number[0]);
 
 	}
-	
+
 	return solution;
 }
- 
+
 void big::pop_back()
 {
 	number.pop_back();
@@ -841,7 +840,7 @@ void big::append(int x)
 	{
 		number.push_back(x % 10);
 		x /= 10;
-	}while (x != 0);
+	} while (x != 0);
 }
 
 void big::append(string num)
@@ -975,7 +974,7 @@ int big::find_first_not_of(string num)
 
 int big::find_last_of(int x)
 {
-	big num (x);
+	big num(x);
 	bool result = true;
 
 	for (int i = number.size() - 1; i >= num.size() - 1; --i)
@@ -1053,167 +1052,6 @@ big big::subbig(int pos, int length)
 
 }
 
-///////////////////////////////////////////////////////////////////////////////////
-////////////////////////// SSTRING FUNCTIONS //////////////////////////////////////
-///////////////////////////////////////////////////////////////////////////////////
-
-big::big(sstring str)
-{
-	big x(str.get());
-}
-
-void big::setNumber(sstring str)
-{
-	setNumber(str.get());
-}
-
-void big::operator+= (sstring str)
-{
-	operator+=(str.get());
-}
-
-void big::operator-= (sstring str)
-{
-	operator-=(str.get());
-}
-
-void big::operator*= (sstring str)
-{
-	operator*=(str.get());
-}
-
-void big::operator^= (sstring str)
-{
-	operator^=(str.get());
-}
-
-void big::operator/= (sstring str)
-{
-	operator/=(str.get());
-}
-
-void big::operator%= (sstring str)
-{
-	operator%=(str.get());
-}
-
-void big::operator= (sstring str)
-{
-	operator=(str.get());
-}
-
-big big::operator* (sstring copy)
-{
-	big x(copy);
-	return operator*(x);
-}
-
-big big::operator+ (sstring copy)
-{
-	big x(copy);
-	return operator+(x);
-}
-
-big big::operator- (sstring copy)
-{
-	big x(copy);
-	return operator-(x);
-}
-
-big big::operator/ (sstring copy)
-{
-	big x(copy);
-	return operator/(x);
-}
-
-big big::operator% (sstring copy)
-{
-	big x(copy);
-	return operator%(x);
-}
-
-big big::operator^ (sstring copy)
-{
-	big x(copy);
-	return operator^(x);
-}
-
-bool big::operator> (sstring copy)
-{
-	big x(copy);
-	return operator>(x);
-}
-
-bool big::operator< (sstring copy)
-{
-	big x(copy);
-	return operator<(x);
-}
-
-bool big::operator>= (sstring copy)
-{
-	big x(copy);
-	return operator>=(x);
-}
-
-bool big::operator<= (sstring copy)
-{
-	big x(copy);
-	return operator<=(x);
-}
-
-bool big::operator== (sstring copy)
-{
-	big x(copy);
-	return operator==(x);
-}
-
-bool big::operator!= (sstring copy)
-{
-	big x(copy);
-	return operator!=(x);
-}
-
-void big::append(sstring str)
-{
-	append(str.get());
-}
-
-int big::find(sstring str)
-{
-	return find(str.get());
-}
-
-int big::find(sstring str, int time)
-{
-	return find(str.get(), time);
-}
-
-int big::find_first_of(sstring str)
-{
-	return find_first_of(str.get());
-}
-
-int big::find_first_not_of(sstring str)
-{
-	return find_first_not_of(str.get());
-}
-
-int big::find_last_of(sstring str)
-{
-	return find_last_of(str.get());
-}
-
-int big::find_last_not_of(sstring str)
-{
-	return find_last_not_of(str.get());
-}
-
-sstring big::_toSString()
-{
-	sstring str = _toString();
-	return str;
-}
 
 ///////////////////////////////////////////////////////////////////////////////////
 ////////////////////////// UTILITY FUNCTIONS //////////////////////////////////////
@@ -1244,25 +1082,15 @@ void big::expo(big num)
 			return;
 		}
 	}
-#ifdef debug
-	Stopwatch watch;
-#endif
 
 	for (int i = (factors.size()) - 1; i >= 0; --i)
 	{
 
-#ifdef debug
-		watch.startWatch();
-#endif
 		for (int j = 1; factors[i] > j; ++j)
 		{
 			operator*=(cop);
 		}
 
-#ifdef debug
-		watch.endWatch();
-		cout << factors[i] << " " << i << " " << watch.getTime() << endl;
-#endif
 		cop.number.resize(0);
 		copy(cop);
 	}
@@ -1304,7 +1132,7 @@ void big::shiftLeft()
 void big::addItself(int x, const big& copy)
 {
 
-	for (int i = 0;  i < x; ++i)
+	for (int i = 0; i < x; ++i)
 	{
 		addition(copy);
 	}
@@ -1507,7 +1335,7 @@ vector<big> big::primeFactor(big num, vector<big> vec)
 		copy /= 2;
 		vec.push_back(2);
 	}
-	
+
 	do
 	{
 
@@ -1542,7 +1370,7 @@ big big::multiply(big num1)
 	big hold;
 
 	hold.number.resize(num1.size());
-	
+
 	for (int i = size() - 1; i > 0; --i)
 	{
 		for (int j = 0; j < num1.size(); ++j)
