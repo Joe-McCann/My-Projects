@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" build-on-make="true" name="Final Grade Determiner:jar">
-    <output-path>$PROJECT_DIR$/out/artifacts/Final_Grade_Determiner_jar</output-path>
-    <root id="archive" name="Final Grade Determiner.jar">
-      <element id="module-output" name="Final Grade Determiner" />
-    </root>
-  </artifact>
-</component>
