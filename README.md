@@ -1,6 +1,1 @@
-My-Projects
-===========
-
-Several projects I have created over the course of my high school career (in various languages)
-
-Each project has its own README in its folder, describing its usage and purpose
+This is an old legacy repo that has stuff that I used to work on in high school and college
